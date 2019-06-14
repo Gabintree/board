@@ -32,7 +32,12 @@
 				<td> <textarea rows="10" name="bcontent" >${content_view.bcontent}</textarea></td>
 			</tr>
 			<tr >
-				<td colspan="2"> <input type="submit" value="수정"> &nbsp;&nbsp; <a href="list">목록보기</a> &nbsp;&nbsp; <a href="delete?bId=${content_view.bid}">삭제</a> &nbsp;&nbsp; <a href="reply_view?bId=${content_view.bid}">답변</a></td>
+				<td colspan="2"> 
+				<input type="submit" value="수정"> &nbsp;&nbsp; 
+				<a href="list">목록보기</a> &nbsp;&nbsp; 
+				<a href="delete?bid=${content_view.bid}">삭제</a>&nbsp;&nbsp; 
+				<a href="reply_view?bid=${content_view.bid}">답변</a>
+				</td>
 			</tr>
 		</form>
 	</table>
