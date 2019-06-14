@@ -1,0 +1,19 @@
+package edu.kb.ex.dto;
+
+import java.security.Timestamp;
+
+public class BDto {
+
+	int bid;
+	String bname;
+	String btitle;
+	String bcontent;
+	Timestamp bdate;
+	String bhit;
+	String bgroup;
+	String bstep;
+	String bindent;
+	
+	public BDto() {}
+		
+}

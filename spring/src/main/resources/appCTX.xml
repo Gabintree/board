@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--Calculation cal = new Calculation();  -->
+<bean id = "cal" class ="spring0611.Calculation"/>
+<bean id = "myCal" class = "spring0611.MyCalculation">
+	<property name = "cal">
+		<ref bean ="cal"/>
+	</property>
+	<property name ="f" value="10"></property>
+	<property name ="s" value="2"></property>
+</bean>
+</beans>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="spring"/>
+<aop-project name="springMVCtest"/>
+<aop-project name="springMVCBoard"/>
+<aop-project name="springNew"/>
+</aop-reference-model>

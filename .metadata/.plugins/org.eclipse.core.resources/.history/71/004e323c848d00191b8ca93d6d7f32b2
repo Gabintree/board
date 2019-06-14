@@ -1,0 +1,6 @@
+package edu.kb.ex.command;
+
+public class BListCommand implements BCommand{
+	
+	
+}

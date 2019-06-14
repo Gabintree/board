@@ -1,0 +1,5 @@
+package edu.kb.ex.command;
+
+public class BContentCommand implements BCommand {
+
+}

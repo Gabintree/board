@@ -1,0 +1,6 @@
+package edu.kb.ex.command;
+
+public interface Bcommand {
+
+	void execute(Model model);
+}
