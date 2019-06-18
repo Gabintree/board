@@ -133,12 +133,12 @@ public void delete(String bid) {
 	public BDto contentview(String strid) {
 		BDto dto = null;
 		
+		upHit(strid);
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 		ResultSet resultSet = null;
 		
 		try {
-			
 			connection = dataSource.getConnection();
 			
 			String query = "select * from mvc_board where bid=?";
@@ -176,6 +176,35 @@ public void delete(String bid) {
 		return dto;
 	}
 //
+	public void upHit(String strid) {
+	
+		Connection connection = null;
+		PreparedStatement preparedStatement = null;
+
+		
+		try {
+			
+			connection = dataSource.getConnection();
+			String query = "update mvc_board set bhit = bhit + 1 where bid = ?";
+			preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setInt(1, Integer.parseInt(strid));
+			preparedStatement.executeUpdate();
+			
+	
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+
+				if(preparedStatement != null) preparedStatement.close();
+				if(connection != null) connection.close();
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+		}
+
+	}
 	public BDto reply_view(String bid) {
 			BDto dto = null;
 			

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.kb.ex.dao.IDao">
+	<select id="listDao" resultType="edu.kb.ex.dto.ContentDto">
+		SELECT * FROM BOARD ORDER BY MID DESC
+	</select>
+	
+	
+	<insert id="writeDao">
+		insert into board values(board_seq.nextval, #{param1}, #{param2})
+	</insert>
+	
+	
+	<delete id="deleteDao">
+		delete board where mid = #{param1}
+	</delete>
+	
+	<select id="readDao" resultType="edu.kb.ex.dto.ContentDto">
+		SELECT * FROM BOARD where mid= #{param1}
+	</select>
+	
+</mapper>

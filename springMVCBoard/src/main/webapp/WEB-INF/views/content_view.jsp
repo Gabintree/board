@@ -31,7 +31,7 @@
 				<td> 내용 </td>
 				<td> <textarea rows="10" name="bcontent" >${content_view.bcontent}</textarea></td>
 			</tr>
-			<tr >
+			<tr>
 				<td colspan="2"> 
 				<input type="submit" value="수정"> &nbsp;&nbsp; 
 				<a href="list">목록보기</a> &nbsp;&nbsp; 
