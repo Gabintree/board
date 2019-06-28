@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="hello"/>
 <aop-project name="spring"/>
 <aop-project name="springMVCtest"/>
+<aop-project name="gabinProject"/>
 <aop-project name="20190617_mybatis_basic"/>
 <aop-project name="springMVCBoard"/>
 <aop-project name="springNew"/>
+<aop-project name="loginPT"/>
 </aop-reference-model>

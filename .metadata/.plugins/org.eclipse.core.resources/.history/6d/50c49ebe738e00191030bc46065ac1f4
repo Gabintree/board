@@ -1,5 +1,0 @@
-package edu.kb.ex.command;
-
-public class BReplyCommand implements BCommand {
-
-}

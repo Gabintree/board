@@ -3,14 +3,27 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
 		<item value="" key="selection"/>
-		<item value="false" key="casesensitive"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="4.1.4"/>
+			<item value="repositories"/>
+			<item value="join"/>
+			<item value="modify"/>
+			<item value="modi"/>
+			<item value="mod"/>
+			<item value="modfy"/>
+			<item value="Board"/>
+			<item value="Board_reply_view"/>
+			<item value="list"/>
+			<item value="logined"/>
 			<item value="exe"/>
 		</list>
 		<list key="replacehistory">
+			<item value="board"/>
+			<item value="board_reply_view"/>
 			<item value=""/>
 		</list>
 	</section>

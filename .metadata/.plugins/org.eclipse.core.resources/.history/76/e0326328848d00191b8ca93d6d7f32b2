@@ -1,8 +1,0 @@
-package edu.kb.ex.command;
-
-import org.springframework.ui.Model;
-
-public interface Bcommand {
-	void execute(Model model);
-	
-}
